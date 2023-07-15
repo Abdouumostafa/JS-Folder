@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 300px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.counterNumber {
+    margin: 20px 0;
+    font-size: 44px;
+}
+
+.btns .btn {
+    background-color: brown;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}

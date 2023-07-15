@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #0b8793, #360033);
+    height: 100vh;
+    font-family: monospace;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+    background: linear-gradient(to right, #341b63, #2a0845);
+}
+
+input {
+    padding: 15px;
+    border: none;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    font-size: 16px;
+    border: none;
+    background-color: #734eb6;
+    color: #fff;
+    margin-top: 30px;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.result {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.result::before {
+    content: 'Your Password:  ';
+}

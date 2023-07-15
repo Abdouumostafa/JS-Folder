@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Table</title>
+    <style>
+        * {
+            font-family: monospace;
+        }
+
+        .container {
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+        }
+
+        #rows,
+        #columns {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            width: 300px;
+            background-color: #ff672f7a;
+        }
+
+        #rows:focus,
+        #columns:focus {
+            outline: none;
+        }
+
+        button {
+            background-color: brown;
+            font-size: 14px;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            padding: 6px 15px;
+            cursor: pointer;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+            margin-top: 80px;
+            width: 50%;
+            margin: 80px auto 0;
+            font-size: 18px;
+        }
+
+        td {
+            padding: 0.5rem;
+            text-align: left;
+            border: 1px solid #b3b3b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" placeholder="Number Of Rows" id="rows">
+        <input type="text" placeholder="Number Of Columns" id="columns">
+        <button id="btn">Create Table</button>
+    </div>
+    <!-- <table>
+        <tr>
+            <td>John Doe</td>
+            <td>35</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>27</td>
+            <td>Los Angeles</td>
+        </tr>
+    </table> -->
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Bill calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>spli <br> tter</h1>
+        <div class="calcBox">
+            <div class="inputSide">
+                <div class="bill">
+                    <p class="small">BILL</p>
+                    <input id="billValue" type="number" placeholder="0">
+                </div>
+                <div class="tip">
+                    <p class="small">Select Tip %</p>
+                    <div class="tips">
+                        <div class="box">
+                            <div class="percentValue">5</div> %
+                        </div>
+                        <div class="box">
+                            <div class="percentValue">10</div> %
+                        </div>
+                        <div class="box">
+                            <div class="percentValue">15</div> %
+                        </div>
+                        <div class="box">
+                            <div class="percentValue">25</div> %
+                        </div>
+                        <div class="box">
+                            <div class="percentValue">50</div> %
+                        </div>
+                        <div class="box specialBox">Custom</div>
+                    </div>
+                </div>
+                <div class="numOfPeople ">
+                    <p class="small">Number Of People</p>
+                    <input id="numOfPeople" type="number" placeholder="0">
+                </div>
+            </div>
+            <div class="outputSide">
+                <div class="subContainer">
+                    <div class="tipAmount">
+                        <div class="text">
+                            <p class="small">Tip Amount</p>
+                            <span>/person</span>
+                        </div>
+                        <div class="tipResult result">
+                            $0.00
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="text">
+                            <p class="small">Total</p>
+                            <span>/person</span>
+                        </div>
+                        <div class="totalResult result">
+                            $0.00
+                        </div>
+                    </div>
+                </div>
+
+                <button class="resetButton notActive ">
+                    RESET
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

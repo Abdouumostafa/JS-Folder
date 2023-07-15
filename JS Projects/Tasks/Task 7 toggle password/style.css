@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50%;
+}
+
+.container input {
+    height: 30px;
+    width: 250px;
+}
+
+.container button {
+    background-color: brown;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    height: fit-content;
+    color: #fff;
+    cursor: pointer;
+}

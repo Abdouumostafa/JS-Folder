@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/890d12abd9.js" crossorigin="anonymous"></script>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Create Account</h1>
+        <div class="inputs">
+            <div class="contentLine">
+                <div class="username title">Username</div>
+                <input type="text" placeholder="Username" id="usernameInput">
+                <i class="fa-solid fa-circle-check complete1 hidden " style="color: green;"></i>
+                <i class="fa-solid fa-circle-exclamation notCompleted1 hidden warningPosition" style="color: red;"></i>
+                <div class="warning warning1 hidden">Enter a valid username</div>
+            </div>
+            <div class="contentLine">
+                <div class="email title">Email</div>
+                <input type="email" placeholder="Email" id="emailInput">
+                <i class="fa-solid fa-circle-check complete2 hidden" style="color: green;"></i>
+                <i class="fa-solid fa-circle-exclamation notCompleted2 hidden warningPosition" style="color: red;"></i>
+                <div class="warning warning2 hidden">Enter a valid email</div>
+            </div>
+            <div class="contentLine">
+                <div class="password title">Password</div>
+                <input type="password" placeholder="Password" id="passwordInput">
+                <i class="fa-solid fa-circle-check complete3 hidden" style="color: green;"></i>
+                <i class="fa-solid fa-circle-exclamation notCompleted3 hidden warningPosition" style="color: red;"></i>
+                <div class="warning warning3 hidden">Enter a valid password</div>
+            </div>
+            <div class="submitBtn">
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+/* Global Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui;
+    background-color: #222;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media(min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media(min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media(min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.cruds {
+    width: 80%;
+    margin: auto;
+}
+
+.cruds .head {
+    text-align: center;
+    margin: 10px 0;
+}
+
+input {
+    background-color: #111;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+input:focus {
+    outline: none;
+    transform: scale(1.03);
+}
+
+.inputs input,
+.outputs input {
+    margin: 5px 0;
+    padding: 7px;
+}
+
+.inputs #title,
+.inputs #count,
+.inputs #category,
+.outputs input {
+    width: 100%;
+}
+
+.inputs .price input {
+    width: 20%;
+}
+
+.inputs .price small {
+    background-color: #b10000;
+    border-radius: 6px;
+    padding: 7px;
+}
+
+.inputs .price small::before {
+    content: "Total: ";
+}
+
+button {
+    background-color: rgb(58, 0, 82);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 6px;
+    cursor: pointer;
+    margin: 5px !important;
+    width: 100%;
+    /* For update and delete button*/
+    transition: 0.6s;
+}
+
+button:hover {
+    background-color: rgb(83, 11, 114);
+}
+
+.outputs .btnSearch {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.outputs .btnSearch button {
+    width: 45%;
+}
+
+table {
+    border-spacing: 0;
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+table tr td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}

@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+:root {
+    --dark--purple: #4a2040;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--dark--purple);
+}
+
+.container {
+    background-color: #e2e2e2;
+    padding: 40px 20px;
+    border-radius: 20px;
+    width: 600px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+#typeOfQuote {
+    margin: 10px 0;
+    font-size: 20px;
+    color: var(--dark--purple);
+    font-weight: bold;
+}
+
+#theQuote {
+    font-size: 22px;
+    margin: 40px 0;
+}
+
+#author {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+button {
+    border: none;
+    color: #fff;
+    background-color: var(--dark--purple);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+}
